@@ -5,7 +5,7 @@ Prototype-Driven and Multi-Expert Integrated Multi-Modal MR Brain Tumor Image Se
 ## Architecture of the proposed framework
 
 
-![img1](imgs/img1.png)
+![img1](imgs/Fig2.png)
 
 ## Environment
 
