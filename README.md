@@ -1,24 +1,7 @@
 # PDMINet
-Prototype-Driven and Multi-Expert Integrated Multi-Modal MR Brain Tumor Image Segmentation
+We will upload the complete code after the paper is accepted!
 
 
-## Architecture of the proposed framework
-
-
-![img1](imgs/Fig2.png)
-
-## Environment
-
-
-
-
-## Installation
-
-
-
-   
-   
-## Acknowledgments
 
 
 
