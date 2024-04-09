@@ -109,20 +109,20 @@ class ToTensor(object):
         return {'image': image, 'label': label}
 
 
-def transform(sample):  # 训练集
+def transform(sample):
     trans = transforms.Compose([
         Pad(),
         # Random_rotate(),  # time-consuming
-        Random_Crop(),  # 裁剪
-        Random_Flip(),  # 翻转
-        Random_intencity_shift(),  # 随机密度改变
-        ToTensor()  # 数据类型转换
+        Random_Crop(), 
+        Random_Flip(), 
+        Random_intencity_shift(), 
+        ToTensor() 
     ])
 
     return trans(sample)
 
 
-def transform_valid(sample):  # 验证集
+def transform_valid(sample): 
     trans = transforms.Compose([
         Pad(),
         # MaxMinNormalization(),
@@ -133,10 +133,6 @@ def transform_valid(sample):  # 验证集
 
 
 class BraTS(Dataset):
-    """
-    data_path: 预处理后的数据集所在地址
-    file_path: 对应的.txt文件所在地址
-    """
     def __init__(self, file_path, data_path='', mode=''):  # file_path:path of xxx.txt, data_path:path of data
         self.lines = []
         paths, names = [], []
