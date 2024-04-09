@@ -20,19 +20,19 @@ from predict import validate_softmax
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument('--user', default='lizy', type=str)
+parser.add_argument('--user', default='', type=str)
 
-parser.add_argument('--project_root', default='/home/l/data_2/lzy/SplitBra18/EATE-main', type=str)
+parser.add_argument('--project_root', default='', type=str)
 
-parser.add_argument('--root', default='/home/l/data_1/lzy/BraTSDataset/SplitBtraTS2018/Test', type=str)
+parser.add_argument('--root', default='', type=str)
 
-parser.add_argument('--val_file', default='/home/l/data_1/lzy/BraTSDataset/SplitBtraTS2018/test.txt', type=str)
+parser.add_argument('--val_file', default='', type=str)
 
 parser.add_argument('--output_dir', default='output', type=str)
 
-parser.add_argument('--resume', default='/home/l/data_2/lzy/SplitBra18/EATE-main/output/model_985.pth', type=str)
+parser.add_argument('--resume', default='', type=str)
 
-parser.add_argument('--epoch', default='epoch985', type=str)
+parser.add_argument('--epoch', default='', type=str)
 
 parser.add_argument('--submission', default='submission', type=str)
 
