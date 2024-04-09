@@ -65,7 +65,7 @@ class Rot90(Base):
 # class RandomRotion(Base):
 #     def __init__(self, angle=20):# angle :in degress, float, [0,360]
 #         assert angle >= 0.0
-#         self.axes = (0,1) # 只对HW方向进行旋转
+#         self.axes = (0,1)
 #         self.angle = angle #
 #         self.buffer = None
 #
@@ -227,7 +227,6 @@ class RandCrop3D(CenterCrop):
     def __str__(self):
         return 'RandCrop({})'.format(self.size)
 
-# for data only
 class RandomIntensityChange(Base):
     def __init__(self,factor):
         shift,scale = factor
