@@ -42,7 +42,7 @@ def tailor_and_concat(x, model):
     y = x.clone()
 
     for i in range(len(temp)):
-        temp[i] = model(temp[i])[0]  # 注意模型的输出
+        temp[i] = model(temp[i])[0]
 
     y[..., :128, :128, :128] = temp[0]
     y[..., :128, 128:240, :128] = temp[1][..., :, 16:128, :]
