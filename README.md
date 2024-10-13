@@ -8,6 +8,7 @@ After downloading the dataset from [here](https://ipp.cbica.upenn.edu/), data pr
 
 ## Training
 Run the training script on BraTS dataset.
+
 `python3  train.py`
 
 ## Testing 
